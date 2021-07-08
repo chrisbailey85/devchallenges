@@ -144,5 +144,60 @@ color: #828282;
 .username {
     font-weight: 700;
 }
-/* font-family: 'Montserrat', sans-serif;
-font-family: 'Playfair Display', serif; */
+@media (min-width: 425px) {
+    body {
+        padding: 32px 40px 24px;
+    }
+}
+@media (min-width: 768px) {
+    body {
+        padding: 32px 100px 24px;
+    }
+}
+@media (min-width: 1024px) {
+    body {
+        padding: 32px 160px 24px;
+    }
+
+    .ingredients__list, .instructions__list {
+        padding-right: 300px;
+    }
+    .amount {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        top: 500px;
+        right: 160px;
+        width: 216px;
+        height: 340px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        margin: 0;
+    }
+    .servings {
+        margin-bottom: 0;
+    }
+    .time {
+        display: flex;
+        flex-direction: column;
+    }
+    .time__item {
+        margin-top: 43px;
+    }
+}
+@media (min-width: 1440px) {
+    body {
+        padding: 32px 236px 24px;
+    }
+    .ingredients {
+        margin-top: 48px;
+    }
+    .amount {
+        top: 655px;
+        right: 236px;
+    }
+    .instructions__item:first-child {
+        margin-bottom: 31px;
+    }
+}
