@@ -16,18 +16,10 @@
       href="https://devchallenges.io/"
     />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-<style>
-  label, input {
-    display: block;
-  }
-  .d-f {
-    display: flex;
-  }
-</style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
     <title>Devchallenges</title>
   </head>
   <body>
@@ -38,28 +30,28 @@
         <div class="item">
           <div class="item__img">
             <img src="./photo1.png" alt="">
-            <div class="info">
-              <h2 class="item__name">Vintage Backbag</h2>
-              <p class="item__price">$54.99 <span class="item__rrp"></span></p>
-            </div>
+          </div>
+          <div class="info">
+            <h2 class="item__name">Vintage Backbag</h2>
+            <p class="item__price">$54.99 <span class="item__rrp">$94.99</span></p>
             <div class="item__quantity">
-              <button class="subract">-</button>
+              <button class="item__btn subract" aria-label="decrease quantity">-</button>
               <span class="item__amount">1</span>
-              <button class="subract">add</button>
+              <button class="item__btn add" aria-label="increase quantity">+</button>
             </div>
           </div>
         </div>
         <div class="item">
           <div class="item__img">
             <img src="./photo2.png" alt="">
-            <div class="info">
-              <h2 class="item__name">Vintage Backbag</h2>
-              <p class="item__price">$54.99 <span class="item__rrp"></span></p>
-            </div>
+          </div>
+          <div class="info">
+            <h2 class="item__name">Vintage Backbag</h2>
+            <p class="item__price">$54.99 <span class="item__rrp">$124.99</span></p>
             <div class="item__quantity">
-              <button class=" item__btn subract">-</button>
+              <button class=" item__btn subract" aria-label="decrease quantity">-</button>
               <span class="item__amount">1</span>
-              <button class="item__btn add">+</button>
+              <button class="item__btn add" aria-label="increase quantity">+</button>
             </div>
           </div>
         </div>
@@ -74,30 +66,44 @@
       </div>
       <form action="" class="form">
         <h3 class="form__heading">Contact infomation</h3>
-        <label for="email" id="email">Email</label>
-        <input type="email" placeholder="Enter your email...">
-        <label for="phone" id="phone">Phone</label>
-        <input type="text" placeholder="Enter your phone...">
+        <div>
+          <label for="email" id="email">Email</label>
+          <input type="email" placeholder="Enter your email...">
+        </div>
+        <div>
+          <label for="phone" id="phone">Phone</label>
+          <input type="text" placeholder="Enter your phone...">
+        </div>
         <h3 class="form__heading">Shipping address</h3>
-        <label for="text" class="name">Full name</label>
-        <input type="text" id="name" value="Rodney Cotton">
-        <label for="address" class="address">Address</label>
-        <input type="text" id="address" placeholder="Your address..">
-        <label for="city" class="city">City</label>
-        <input type="text" id="city" placeholder="Your city..">
-        <div class="d-f">
+        <div>
+          <label for="text" class="name">Full name</label>
+          <input type="text" id="name" value="Rodney Cotton">
+        </div>
+        <div>
+          <label for="address" class="address">Address</label>
+          <input type="text" id="address" placeholder="Your address..">
+        </div>
+        <div>
+          <label for="city" class="city">City</label>
+          <input type="text" id="city" placeholder="Your city..">
+        </div>
+        <div class="form__localtion">
           <div>
             <label for="country" class="country">Country</label>
             <input type="text" id="country" placeholder="Your Country..">
           </div>
           <div>
             <label for="postal" class="postal">Postal code</label>
-                    <input type="text" id="postal" placeholder="Your Postal code..">
+            <input type="text" id="postal" placeholder="Your Postal code..">
           </div>
         </div>
-        <input type="checkbox" name="save" id="save">
-        <label for="save" class="save">Save this information for next time</label>
-        <button type="submit" class="form__btn">Continue</button>
+        <div class="form__save">
+          <input type="checkbox" name="save" id="save">
+          <label for="save" class="save">Save this information for next time</label>  
+        </div>
+        <div class="form__btn">
+          <button type="submit" >Continue</button>
+        </div>
       </form>
     </main>
     <footer>created by username - devChallenges.io</footer>
